@@ -39,6 +39,6 @@ add this in your yml file
 spring:
       data:
   	redis:
-           host=localhost
-           port=6379
+           host: localhost
+           port: 6379
 ```

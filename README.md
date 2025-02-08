@@ -1,7 +1,26 @@
 # redis-spring-wslinux-template
 
-This guide will help you set up Redis on WSL and integrate it with Spring Boot
+Run these commands in your WSL terminal to setup redis on windows
 
 ```bash
 curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
 ```
+```bash
+echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+```
+
+```bash
+sudo apt-get update
+```
+
+```bash
+sudo apt-get install redis
+```
+
+```bash
+sudo service redis-server start
+```
+```bash
+redis-cli
+```
+

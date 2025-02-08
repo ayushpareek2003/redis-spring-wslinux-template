@@ -39,6 +39,10 @@ add this in your yml file
 spring:
       data:
   	redis:
+          
            host: localhost
            port: 6379
+           // password: only if using redis cloud
 ```
+
+

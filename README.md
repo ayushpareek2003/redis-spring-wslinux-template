@@ -24,3 +24,12 @@ sudo service redis-server start
 redis-cli
 ```
 
+
+Now paste this dependency in your pom.xml
+
+```xml
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+```

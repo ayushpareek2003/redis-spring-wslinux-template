@@ -33,3 +33,12 @@ Now paste this dependency in your pom.xml
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 ```
+
+add this in your yml file
+```yml
+spring:
+      data:
+  	redis:
+           host=localhost
+           port=6379
+```
